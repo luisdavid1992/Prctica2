@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anclas</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ol>
+                <li><a href="../Ejercicio/anclas.html">Anclas</a>
+                <li><a href="../Ejercicio/errores.html">Errores</a>
+                <li><a href="../Ejercicio/formulario.html">Formulario</a>
+                <li><a href="../Ejercicio/tabla.html">Tabla</a>
+                <li><a href="../Ejercicio/video.html">Video</a>
+                <li><a href="../index.html">Ejercicio</a>
+            </ol>
+        </nav>
+    </header>
+    <h1>ANCLAS</h1>
+
+    <a href="#Primera-parte">Primera Parte</a>
+    <br>
+    <a href="#Crear-enlaces-ancla">Crear enlaces ancla</a>
+
+
+    <p>
+Un enlace, también llamado hiperenlace, vínculo o hipervínculo, se define como un elemento de un documento <br>
+ electrónico que hace referencia a otro documento o a un punto específico de sí mismo o de otro documento. <br>
+
+En HTML los enlaces que hacen referencia a puntos específicos del documento se denominan enlaces ancla <br>
+ y se construyen añadiendo al final de la URL una almohadilla (#) seguida del identificador del punto de destino, al que se le llama anclaje. <br>
+
+Tipos de anclajes HTML <br>
+
+Un anclaje (o ancla) en HTML son elementos que los navegadores pueden identificar como punto al que dirigir al usuario <br>
+ a través de un enlace ancla. Los anclajes se pueden construir de dos formas: <br>
+Los enlaces normalmente se utilizan para hacer referencia a una página distinta de la que los contiene, <br>
+ pero en ocasiones, tenemos páginas con un contenido tan grande que nos interesa enviar al usuario no a una página sino a un <br>
+  "lugar" concreto de la página que está viendo. Para que sepas de qué te hablo, me refiero con esto al <br>
+   tipo de enlace que tienes en la parte inferior de muchas páginas que te dirige hacia la parte superior de la página (Ir arriba). <br>
+    Para estos casos HTML ha definido un enlace especial que denomina Ancla. Vamos a ver cómo podemos colocarlos en nuestro sitio. <br>
+
+Usando las anclas o anclajes puedes hacer que cuando las visitas pulsen sobre ese enlace, la ventana del navegador se mueva hacia esa parte <br>
+ concreta de la misma página o bien, pase a otra página distinta, <br>
+  pero no a su comienzo, sino a la parte media o a la parte que tú desees de esa otra página. <br>
+ <a name="Primera-Parte" />
+<h3>Primera Parte</h3>
+
+
+
+Elemento <a> con atributo name, sin atributo href y sin anchor
+Obsoleto. En HTML5, el elemento <a> no acepta el atributo name. <br>
+Con este método los anclajes son invisibles gráficamente pero se pueden ver en el código fuente del documento. <br>
+ Además, los editores que interpretan HTML suelen marcar estos puntos con un símbolo de ancla de barco <br>
+  y así se puede visualizar su posición durante la edición del documento.
+
+La sintaxis de estos anclajes es la siguiente: <br>
+El código anterior se puede poner en cualquier parte dentro de la etiqueta body.
+
+<a name="Segunda-Parte" />
+
+<h3>Segunda Parte</h3>
+Cualquier elemento con atributo id <br>
+Con este método se puede definir un punto de anclaje en cualquier elemento. Por ejemplo:
+
+<p id="una-id">.......</p>
+También se pueden construir enlaces ancla de forma similar a como se hacía con el elemento <a> y el atributo name antes de HTML5 pero sustituyendo el atributo name con el atributo id:
+
+<a id="un-identificador"></a>
+Es importante anotar que el valor del atributo name o el valor del atributo id no debe compartirse con otros elementos. Es decir, en el mismo documento no puede haber más de un elemento con el mismo valor para id ni más de un elemento con el mismo valor para name. De este modo se pueden identificar elementos concretos de forma inequívoca. Si en la misma página se repite el mismo id o el mismo name no podrá identificarse inequívocamente al elemento que queremos encontrar a través del enlace ancla. Por ejemplo:
+
+
+<p id="uno">Soy el párrafo uno</p>
+<p><a id="un-anclaje"></a>Este anclaje "uno" no se podría diferenciar del anterior a través de un enlace ancla.</p>
+<p id="uno">Vaya, otro "uno".</p>
+<p id="dos">Soy el párrafo dos.</p> <br>
+<div><p>Los anclajes pueden definirse en los puntos <a id="un-anclaje"></a> exactos dónde queremos que estén.</p></div>
+Aunque es válido que en un mismo documento existan un id y un name con el mismo valor, <br>
+ si se utiliza ese valor en un enlace ancla tampoco podrá identificarse inequívocamente al elemento al que nos referimos,<br>
+  salvo que el id y el name con el mismo valor en estén en el mismo elemento. <br>
+   En los casos ambiguos lo más normal es que los navegadores se paren en la primera coincidencia. <br>
+
+Una vez que tenemos un documento con anclajes definidos, estamos listos para enlazar a ellos. Veamos como construir estos enlaces.
+
+<a name="Crear-enlaces-ancla" />
+<h3>Crear enlaces ancla</h3>
+Los enlaces ancla para páginas web se crean mediante su URL a la que se añade al final una almohadilla <br>
+ (símbolo #) seguida del valor del atributo name o del atributo id del anclaje. Por ejemplo: <br>
+
+Si no se especifica ninguna URL el enlace ancla hará referencia a anclajes del propio documento. Por ejemplo, <br>
+ los siguientes enlaces ancla harían referencia al punto «un-nombre» y al punto «una-id» del propio documento en el que se encuentran: <br>
+
+<a href="#una-id">Ir al elemento con id="una-id" del propio documento</a> <br>
+Es importante saber que Google y otros motores de búsqueda son capaces de rastrear e indexar enlaces ancla. <br>
+ Google, por ejemplo, puede mostrar un enlace ancla dentro de un resultado de búsqueda si estima que el contenido de esa parte <br>
+se adapta mejor a la búsqueda del usuario. Si te fijas, <br>
+ verás muchas veces que aparece el resultado de búsqueda y otros enlaces bajo él que llevan a partes concretas de la página de destino <br>
+ (ojo, no confundas con los enlaces de sitio que también puede mostrar Google bajo un resultado de búsqueda y que apuntan a diferentes <br>
+ páginas o secciones del website pero no a diferentes partes de una misma página. <br>
+ En los resultados de búsqueda el texto que aparece en el enlace anclaje suele ser el valor del atributo title del elemento ancla, <br>
+  aunque el buscador puede mostrar otro texto. Por ejemplo:
+
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ol>
+                <li><a href="../Ejercicio/anclas.html">Anclas</a>
+                <li><a href="../Ejercicio/errores.html">Errores</a>
+                <li><a href="../Ejercicio/formulario.html">Formulario</a>
+                <li><a href="../Ejercicio/tabla.html">Tabla</a>
+                <li><a href="../Ejercicio/video.html">Video</a>
+                <li><a href="../index.html">Ejercicio</a>
+            </ol>
+        </nav>
+    </header>
+    <form action="../../form-result.php" method="get" target="_blank">
+
+        <fieldset>
+      
+          <legend>Información básica</legend>
+      
+          <p><label>Nombres: <input type="text" name="nombrecompleto"></label></p>
+      
+          <p><label>Fecha de nacimiento: <input type="date" name="fechadenacimiento"></label></p>
+      
+          <p>Gender:
+      
+            <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+      
+            <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+      
+          </p>
+      
+          <p><label>Dirección: <input type="text" name="direccion"></label></p>
+      
+          <p><label>Número telefónico: <input type="tel" name="telefono"></label></p>
+      
+        </fieldset>
+      
+        <fieldset>
+      
+          <legend>Información extra</legend>
+      
+          <p>Interests:
+      
+            <label><input type="checkbox" name="libros"> Libros</label>
+      
+            <label><input type="checkbox" name="peliculas"> Películas</label>
+      
+            <label><input type="checkbox" name="videojuegos"> Videojuegos</label>
+      
+          </p>
+      
+          <p><label>Color favorito: <input type="color" name="colorfavorito"></label></p>
+      
+        </fieldset>
+      
+        <p>
+      
+          <input type="submit" value="Enviar datos">
+      
+          <input type="reset" value="Restaurar formulario">
+      
+        </p>
+      
+      </form>
+    
+</body>
+</html>
